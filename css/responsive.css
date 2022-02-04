@@ -8,7 +8,6 @@
     }
 
     .navbar-nav li:last-child {
-        margin-left: 13px;
     }
 }
 
@@ -32,7 +31,9 @@
         width: 100%;
         display: block;
     }
-
+    .navbar-nav li:last-child{
+        margin-right: 0;
+    }
     .navbar-nav li a {
         display: block;
         width: 100%;
