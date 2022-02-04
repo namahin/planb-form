@@ -171,7 +171,9 @@ header nav {
 
 .empaua-heading {}
 
-.empaua-heading h2 {}
+.empaua-heading h2 {
+    margin-bottom: 85px;
+}
 
 .empaua-heading h3 {
     font-weight: 500;
@@ -179,6 +181,7 @@ header nav {
     line-height: 126.5%;
     color: #000000;
     text-align: center;
+    margin-bottom: 79px;
 }
 
 .empaua-sec .row {}
@@ -242,6 +245,11 @@ header nav {
     margin-bottom: 20px;
 }
 
+.empaua-form form label.checkbox-label {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .empaua-form form input,
 .empaua-form form textarea,
 .empaua-form form select {
@@ -260,6 +268,7 @@ header nav {
 
 .empaua-form form input[type='checkbox'] {
     width: auto;
+    margin-right: 10px;
 }
 
 .empaua-form form textarea {
