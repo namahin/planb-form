@@ -35,6 +35,7 @@
 a,
 button {
     transition: linear .2s;
+    text-decoration: none;
 }
 
 .container {
@@ -380,4 +381,138 @@ header nav {
 .reminder-content p small {
     font-size: 14px;
     line-height: 153%;
+}
+
+footer {
+    background-image: url(../images/footer-bg.svg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-bottom: 73px;
+}
+
+footer .container {
+    padding: 0;
+}
+
+.footer-sec {
+    background: #006779;
+    border-radius: 10px;
+    padding: 85px 120px 34px;
+}
+
+.footer-widget {}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
+
+.footer-widget p {
+    color: #FFFFFF99;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+}
+
+.footer-widget h3 {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 45px;
+    color: #ffffff;
+}
+
+.footer-widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-widget ul li {
+    margin-bottom: 18px;
+}
+
+.footer-widget ul li:last-child {
+    margin: 0;
+}
+
+.footer-widget ul li a {
+    color: #FFFFFF99;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.footer-widget ul li a:hover {
+    color: #FFFFFF;
+}
+
+.footer-widget ul li a img {
+    background-color: #ffffff14;
+    padding: 9px;
+    height: 36px;
+    width: 36px;
+    border-radius: 20px;
+    margin-right: 17px;
+}
+
+.footer-post-card {
+    border-radius: 5px;
+    padding: 4px 5px 4px 5px;
+    border: 1px solid #00768A;
+    display: table;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer-post-card:last-of-type {
+    margin-bottom: 0;
+}
+
+.footer-post-card .thumbnail {
+    width: 69px;
+    height: 71px;
+    display: table-cell;
+    border-radius: 6px;
+    background-image: url(../images/ft1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.footer-post-card .title {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 11px;
+}
+
+.footer-post-card .title a {
+    color: #FFFFFF99;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.footer-post-card .title a:hover {
+    color: #FFFFFF;
+}
+
+.copyright {
+    padding-top: 85px;
+}
+
+.copyright p {
+    text-align: center;
+    color: #FFFFFF80;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 0;
 }
