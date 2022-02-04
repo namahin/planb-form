@@ -32,6 +32,11 @@
     font-family: 'GT Walsheim Pro';
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 a,
 button {
     transition: linear .2s;
@@ -66,7 +71,7 @@ h2.sec-title {
     background-color: #FF7B29;
 }
 
-input[type='checkbox'] {}
+/* input[type='checkbox'] {} */
 
 header {
     background-color: #FFFFFF;
@@ -77,13 +82,18 @@ header nav {
     padding: 0 !important;
 }
 
-.navbar-brand {}
 
-.navbar-brand img {}
-
-.navbar-toggler {}
-
-.navbar-toggler-icon {}
+.navbar-toggler {
+    background-color: #15B9D5;
+    border-radius: 6px;
+    width: 45px;
+    height: 45px;
+    display: block;
+    padding: 10px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    border: none;
+}
 
 .navbar-nav {
     align-items: center;
@@ -129,8 +139,6 @@ header nav {
     background-color: #4dc1ff;
 }
 
-.navbar-nav li a.nav-icon img {}
-
 .hero-sec {
     padding-top: 176px;
     padding-bottom: 218px;
@@ -173,8 +181,6 @@ header nav {
     background-size: 110%;
 }
 
-.empaua-heading {}
-
 .empaua-heading h2 {
     margin-bottom: 85px;
 }
@@ -187,8 +193,6 @@ header nav {
     text-align: center;
     margin-bottom: 79px;
 }
-
-.empaua-sec .row {}
 
 .empaua-sec .row .col-md-4 {
     padding: 25px;
@@ -236,10 +240,6 @@ header nav {
     box-shadow: -37px -39px 56px #f3f3f340, 30px 31px 30px #d8d8d824;
     padding: 103px 120px;
 }
-
-.empaua-form {}
-
-.empaua-form form {}
 
 .empaua-form form label {
     font-weight: 400;
@@ -331,7 +331,7 @@ header nav {
     position: absolute;
     left: 50%;
     top: 100px;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
 
 .analysis-card {
@@ -388,8 +388,6 @@ header nav {
     background-size: cover;
 }
 
-.reminder-content {}
-
 .reminder-content h2 {
     margin-bottom: 62px;
 }
@@ -422,6 +420,8 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding-bottom: 73px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 footer .container {
@@ -434,7 +434,21 @@ footer .container {
     padding: 85px 120px 34px;
 }
 
-.footer-widget {}
+.footer-sec .fcol-1 {
+    width: 24%;
+}
+
+.footer-sec .fcol-2 {
+    width: 28%;
+}
+
+.footer-sec .fcol-3 {
+    width: 27%;
+}
+
+.footer-sec .fcol-4 {
+    width: 21%;
+}
 
 .footer-logo {
     margin-bottom: 20px;
@@ -524,6 +538,7 @@ footer .container {
     display: table-cell;
     vertical-align: middle;
     padding-left: 11px;
+    line-height: 0;
 }
 
 .footer-post-card .title a {
