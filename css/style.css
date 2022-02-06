@@ -194,15 +194,28 @@ header nav .container {
 .hero-sec {
     padding-top: 176px;
     padding-bottom: 218px;
+
+    position: relative;
+}
+
+.hero-sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: -100px;
     background-image: url(../images/hero-bg.svg);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center bottom;
     background-size: cover;
 }
 
 .hero-content {
     max-width: 810px;
     margin: auto;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content h1 {
@@ -260,9 +273,11 @@ header nav .container {
     padding: 27px 30px 43px;
     transition: linear .2s;
 }
-.empaua-card:hover{
+
+.empaua-card:hover {
     box-shadow: 10px 25px 50px 0px #2f2f2f0d;
 }
+
 .empaua-card .icon {
     height: 70px;
     width: 70px;
