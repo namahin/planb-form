@@ -43,6 +43,47 @@ button {
     text-decoration: none;
 }
 
+
+input[type=checkbox] {
+    width: 0px !important;
+}
+
+input[type=checkbox]::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 1px solid #00547226;
+    background: #00547226;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    display: inline-block;
+}
+
+input[type=checkbox]:checked::after {
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: center center;
+    background-color: #4DC1FF;
+    border-color: #4DC1FF;
+}
+
+.select {
+    position: relative;
+}
+
+.select select {
+    -webkit-appearance: none;
+}
+
+.select span {
+    width: 24px;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
 .container {
     max-width: 1400px;
 }
@@ -81,7 +122,8 @@ header {
 header nav {
     padding: 0 !important;
 }
-header nav .container{
+
+header nav .container {
     position: relative;
 }
 
@@ -125,12 +167,14 @@ header nav .container{
 .navbar-nav li a:hover {
     border-color: #15b9d5;
 }
-.search-bar{
+
+.search-bar {
     position: absolute;
     top: 50%;
     right: 15px;
     transform: translate(0, -50%);
 }
+
 .search-bar a.nav-icon {
     background-color: #15B9D5;
     border-radius: 6px;
@@ -179,14 +223,17 @@ header nav .container{
     opacity: 0.6;
 }
 
-.empaua-sec {
+.lg-bg {
     background-color: #F7FBFD;
-    padding-top: 162px;
-    padding-bottom: 80px;
     background-image: url(../images/empaua-bg.svg);
     background-repeat: no-repeat;
-    background-position: center 130%;
-    background-size: 110%;
+    background-position: center 30%;
+    background-size: contain;
+}
+
+.empaua-sec {
+    padding-top: 162px;
+    padding-bottom: 80px;
 }
 
 .empaua-heading h2 {
@@ -211,8 +258,11 @@ header nav .container{
     border-radius: 20px;
     height: 100%;
     padding: 27px 30px 43px;
+    transition: linear .2s;
 }
-
+.empaua-card:hover{
+    box-shadow: 10px 25px 50px 0px #2f2f2f0d;
+}
 .empaua-card .icon {
     height: 70px;
     width: 70px;
@@ -238,7 +288,6 @@ header nav .container{
 }
 
 .form-sec {
-    background-color: #F7FBFD;
     padding: 130px 0;
 }
 
@@ -261,6 +310,7 @@ header nav .container{
     display: flex;
     flex-wrap: nowrap;
     margin-bottom: 35px;
+    position: relative;
 }
 
 .empaua-form form input,
@@ -280,13 +330,20 @@ header nav .container{
 }
 
 .empaua-form form input[type='checkbox'] {
-    width: auto;
-    margin-right: 21px;
-    margin-top: 5px;
+    margin-right: 40px;
+    margin-top: 2px;
 }
 
 .empaua-form form textarea {
     margin-bottom: 58px;
+}
+
+.empaua-form form .select select {
+    margin-bottom: 0;
+}
+
+.empaua-form form .select {
+    margin-bottom: 34px;
 }
 
 .empaua-form form button {
